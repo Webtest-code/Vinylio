@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Geniet van een unieke culinaire ervaring in ons restaurant. Ontdek onze uitgebreide menukaart met heerlijke gerechten, wijnen en dranken.">
+    <meta name="keywords" content="restaurant, menukaart, diner, lunch, wijn, dranken, voorgerechten, hoofdgerechten, desserts">
+    <title>Restaurant - Culinaire Ervaring</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <nav class="nav-container">
+            <div class="logo"> 
+                <img src="../Afbeeldingen/cfc81854-c906-43b9-b019-11246007636e_removalai_preview.png" alt="Restaurant Logo">
+            </div>
+            <div class="language-dropdown">
+                <button class="lang-btn" data-lang="en" aria-label="English">
+                    <img src="../Afbeeldingen/engeland.jpg" alt="English" class="flag-icon"> 
+                </button>
+                <button class="lang-btn" data-lang="nl" aria-label="Nederlands">
+                    <img src="../Afbeeldingen/nederland.jpg" alt="Nederlands" class="flag-icon">
+                </button>
+                <button class="lang-btn" data-lang="el" aria-label="Ελληνικά">
+                    <img src="../Afbeeldingen/griekeland.jpg" alt="Ελληνικά" class="flag-icon">
+                </button>
+                <button class="lang-btn" data-lang="de" aria-label="Deutsch">
+                    <img src="../Afbeeldingen/duitsland.jpg" alt="Deutsch" class="flag-icon">
+                </button>
+            </div>
+            <button class="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-button" data-i18n="navHome">Home</a></li>
+                <li><a href="#menu" class="nav-button" data-i18n="navMenu">Menu</a></li>
+                <li><a href="#about" class="nav-button" data-i18n="navAbout">Over Ons</a></li>
+                <li><a href="#contact" class="nav-button" data-i18n="navContact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content" data-aos="fade-up">
+            <h1 data-i18n="heroTitle">Vinylio Wine Restaurant</h1>
+            <p data-i18n="heroSubtitle">Authentieke smaken in het hart van Kos</p>
+            <a href="#menu" class="cta-button" data-i18n="heroCta">Menu</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="menu-container" data-aos="fade-up">
+            <h2 data-i18n="menuTitle">Onze Menukaart</h2>
+            
+            <!-- Main Menu Tabs -->
+            <div class="menu-tabs">
+                <button class="tab-button active" data-tab="food" data-i18n="tabFood">Eten</button>
+                <button class="tab-button" data-tab="wine" data-i18n="tabWine">Wijn</button>
+                <button class="tab-button" data-tab="drinks" data-i18n="tabDrinks">Dranken</button>
+            </div>
+
+            <!-- Food Sub-tabs -->
+            <div class="sub-tabs food-sub-tabs">
+                <button class="sub-tab-button active" data-subtab="starters" data-i18n="subtabStarters">Voorgerechten</button>
+                <button class="sub-tab-button" data-subtab="mains" data-i18n="subtabMains">Hoofdgerechten</button>
+                <button class="sub-tab-button" data-subtab="desserts" data-i18n="subtabDesserts">Desserts</button>
+            </div>
+
+            <!-- Menu Content -->
+            <div class="menu-content">
+                <!-- Food Menu -->
+                <div class="menu-category active" id="food">
+                    <div class="sub-category active" id="starters">
+                        <h3 data-i18n="startersTitle">Voorgerechten</h3>
+                        <div class="menu-items">
+                            <!-- Menu items will be added here -->
+                        </div>
+                    </div>
+                    <div class="sub-category" id="mains">
+                        <h3 data-i18n="mainsTitle">Hoofdgerechten</h3>
+                        <div class="menu-items">
+                            <!-- Menu items will be added here -->
+                        </div>
+                    </div>
+                    <div class="sub-category" id="desserts">
+                        <h3 data-i18n="dessertsTitle">Desserts</h3>
+                        <div class="menu-items">
+                            <!-- Menu items will be added here -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wine Menu -->
+                <div class="menu-category" id="wine">
+                    <h3 data-i18n="wineTitle">Wijnkaart</h3>
+                    <div class="menu-items">
+                        <!-- Wine items will be added here -->
+                    </div>
+                </div>
+
+                <!-- Drinks Menu -->
+                <div class="menu-category" id="drinks">
+                    <h3 data-i18n="drinksTitle">Dranken</h3>
+                    <div class="menu-items">
+                        <!-- Drink items will be added here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-text-box" data-aos="fade-right" data-aos-duration="1200">
+                <h2 data-i18n="aboutTitle">Over Ons</h2>
+                <p data-i18n="aboutText1">Verscholen in een charmant steegje in het hart van Kos-stad vind je Vinylio Wine Restaurant: een intiem familiebedrijf waar liefde voor gastronomie, wijn en gastvrijheid op een unieke manier samenkomen. Gerund door een hechte broer en zus, verwelkomen wij je met open armen in een warme en sfeervolle omgeving waar je je meteen thuis voelt.</p>
+                <p data-i18n="aboutText2">Onze keuken serveert verfijnde mediterrane gerechten met een moderne twist en subtiele Italiaanse invloeden. Elk gerecht wordt met zorg bereid, met verse, lokale ingrediënten en veel aandacht voor detail. Van een lichte lunch tot een uitgebreid diner: bij ons proef je de liefde voor het vak in elke hap.</p>
+                <p data-i18n="aboutText3">Onze zorgvuldig samengestelde wijnkaart biedt een verrassende selectie van Griekse en internationale wijnen, perfect afgestemd op onze gerechten. In combinatie met de stijlvolle inrichting en persoonlijke service creëren we een plek waar je niet alleen eet, maar beleeft.</p>
+                <p data-i18n="aboutText4">Wat Vinylio extra bijzonder maakt, is de persoonlijke touch van de eigenaar, die zich niet alleen toelegt op koken en gastvrijheid, maar ook op kunst. Zijn passie voor tekenen komt tot leven in het restaurant zelf: aan de muren hangt een selectie van zijn eigen handgemaakte illustraties. Elk werk vertelt een verhaal en draagt bij aan de unieke sfeer die Vinylio uitstraalt – een plek waar creativiteit en culinaire beleving elkaar ontmoeten.</p>
+                <p data-i18n="aboutText5">Vinylio is meer dan een restaurant – het is een plek waar je mag ontspannen, genieten en deel uitmaken van onze familie, al is het maar voor één avond. Kom langs, laat je verrassen door de smaken, de sfeer én de kunst, en ontdek de charme van echte Griekse gastvrijheid.</p>
+            </div>
+            <div class="about-photo-box" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="250">
+                <img src="../Afbeeldingen/Eigenaar.png" alt="Eigenaar" style="border: 4px solid rgb(138,98,35); box-sizing: border-box; background: #fff; max-width: 80%; max-height: 80%; display: block;">
+            </div>
+        </div>
+        <div class="about-gallery" style="margin-top: 4rem;">
+            <!-- Hier komt straks de gallerij -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container" data-aos="fade-up">
+            <h2 data-i18n="contactTitle">Contact</h2>
+            <div class="contact-info">
+                <div class="contact-details">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p data-i18n="contactAddress">Restaurantstraat 123, 1234 AB Stad</p>
+                </div>
+                <div class="contact-details">
+                    <i class="fas fa-phone"></i>
+                    <p data-i18n="contactPhone">+31 123 456 789</p>
+                </div>
+                <div class="contact-details">
+                    <i class="fas fa-envelope"></i>
+                    <p data-i18n="contactEmail">info@restaurant.nl</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p data-i18n="footer">&copy; 2024 Restaurant. Alle rechten voorbehouden.</p>
+        </div>
+    </footer>
+
+    <a href="https://www.instagram.com/vinylio_wine_restaurant?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="instagram-float" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../JAVA/script.js"></script>
+</body>
+</html>
